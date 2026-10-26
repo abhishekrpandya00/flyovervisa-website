@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Scholarship Finder for Indian Students | Flyover Visa Peak</title>
+<meta content="Search verified scholarships available to Indian students across Australia, the USA, the UK, Italy, Canada and Germany." name="description"/>
+<link href="assets/images/favicon.png" rel="icon" type="image/png"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="assets/css/styles.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+<script>
+tailwind.config={darkMode:'class',theme:{extend:{colors:{secondary:'#ae3029','secondary-container':'#fc695c','on-secondary-container':'#690005',primary:'#3b5f7e','primary-container':'#547898','on-primary':'#ffffff','on-secondary':'#ffffff','on-background':'#191c1e','on-surface':'#191c1e','on-surface-variant':'#42474d',surface:'#f7f9fb','background':'#f7f9fb','surface-container':'#eceef0','surface-container-low':'#f2f4f6','surface-container-lowest':'#ffffff','surface-container-high':'#e6e8ea','surface-container-highest':'#e0e3e5','outline':'#72777e','outline-variant':'#c2c7ce'},borderRadius:{DEFAULT:'0.125rem',lg:'0.25rem',xl:'0.5rem',full:'0.75rem'},spacing:{gutter:'24px','max-width':'1280px','section-padding-mobile':'40px','section-padding-desktop':'80px','base':'8px'},fontFamily:{'display-lg':['Manrope'],'headline-lg':['Manrope'],'headline-md':['Manrope'],'body-md':['Inter'],'body-lg':['Inter'],'label-md':['Inter'],'label-sm':['Inter']},fontSize:{'display-lg':['48px',{lineHeight:'56px',letterSpacing:'-0.02em',fontWeight:'800'}],'headline-lg':['32px',{lineHeight:'40px',letterSpacing:'-0.01em',fontWeight:'700'}],'headline-md':['24px',{lineHeight:'32px',fontWeight:'600'}],'body-lg':['18px',{lineHeight:'28px',fontWeight:'400'}],'body-md':['16px',{lineHeight:'24px',fontWeight:'400'}],'label-md':['14px',{lineHeight:'20px',letterSpacing:'0.01em',fontWeight:'600'}],'label-sm':['12px',{lineHeight:'16px',letterSpacing:'0.03em',fontWeight:'500'}]}}}}
+</script>
+</head>
+<body class="scholarship-page bg-background text-on-surface font-body-md overflow-x-hidden" data-page="scholarships">
+<div id="site-header"></div>
+<main class="mt-20">
+<section class="scholarship-hero relative overflow-hidden bg-surface">
+<div class="absolute inset-0 bg-cover bg-center opacity-[0.07]" data-alt="Students planning their international education journey" style="background-image:url('assets/images/home-page.jpg')"></div>
+<div class="relative mx-auto grid max-w-max-width gap-10 px-gutter py-section-padding-mobile lg:grid-cols-[1fr_.7fr] lg:items-end lg:py-section-padding-desktop">
+<div class="max-w-3xl space-y-5">
+<span class="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/10 px-4 py-1.5 font-label-md text-label-md text-primary"><span class="material-symbols-outlined text-[18px]">workspace_premium</span>Verified opportunities for Indian students</span>
+<h1 class="font-display-lg text-[42px] leading-[48px] text-on-surface md:text-display-lg">Find funding for your <span class="text-secondary">study plan.</span></h1>
+<p class="max-w-2xl font-body-lg text-body-lg text-on-surface-variant">Compare scholarships across six leading destinations, understand the real eligibility requirements, and continue only with opportunities that match your profile.</p>
+</div>
+<div class="grid grid-cols-3 gap-3 text-center">
+<div class="rounded-2xl border border-outline-variant bg-surface-container-lowest p-4 shadow-sm"><strong class="block font-headline-md text-headline-md text-primary" data-scholarship-total>45</strong><span class="font-label-sm text-label-sm text-on-surface-variant">Scholarships</span></div>
+<div class="rounded-2xl border border-outline-variant bg-surface-container-lowest p-4 shadow-sm"><strong class="block font-headline-md text-headline-md text-primary">6</strong><span class="font-label-sm text-label-sm text-on-surface-variant">Countries</span></div>
+<div class="rounded-2xl border border-outline-variant bg-surface-container-lowest p-4 shadow-sm"><strong class="block font-headline-md text-headline-md text-primary">India</strong><span class="font-label-sm text-label-sm text-on-surface-variant">Focused</span></div>
+</div>
+</div>
+</section>
+<section class="bg-surface-container-lowest py-10 md:py-14">
+<div class="mx-auto max-w-max-width px-gutter">
+<div class="scholarship-filter-shell rounded-[1.75rem] border border-outline-variant bg-surface p-5 shadow-sm md:p-7">
+<div class="mb-5 flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
+<div><span class="font-label-sm text-label-sm font-bold uppercase tracking-[.16em] text-secondary">Refine your search</span><h2 class="mt-2 font-headline-md text-headline-md">Your scholarship shortlist</h2></div>
+<button class="self-start rounded-full px-4 py-2 font-label-sm text-label-sm font-bold text-primary hover:bg-primary/5" data-scholarship-reset type="button">Clear all filters</button>
+</div>
+<div class="grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+<label class="xl:col-span-2"><span class="sr-only">Search scholarships</span><div class="relative"><span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant">search</span><input class="scholarship-control w-full rounded-xl border-outline-variant bg-white py-3 pl-11 pr-4" data-scholarship-search placeholder="Search scholarship, provider or field" type="search"/></div></label>
+<label><span class="sr-only">Country</span><select class="scholarship-control w-full rounded-xl border-outline-variant bg-white py-3" data-scholarship-country><option value="">All countries</option></select></label>
+<label><span class="sr-only">Study level</span><select class="scholarship-control w-full rounded-xl border-outline-variant bg-white py-3" data-scholarship-level><option value="">All study levels</option><option value="Bachelor">Bachelor's</option><option value="Master">Master's</option><option value="PhD">PhD / Research</option></select></label>
+<label><span class="sr-only">Funding type</span><select class="scholarship-control w-full rounded-xl border-outline-variant bg-white py-3" data-scholarship-funding><option value="">All funding</option><option value="Full">Full funding</option><option value="Partial">Partial funding</option><option value="Need">Need-based</option></select></label>
+</div>
+<div class="mt-4 flex flex-wrap items-center gap-2" aria-label="Filter by application status">
+<span class="mr-1 font-label-sm text-label-sm text-on-surface-variant">Application status:</span>
+<button class="scholarship-chip is-active" data-scholarship-status="" type="button">All</button>
+<button class="scholarship-chip" data-scholarship-status="Open" type="button"><span class="h-2 w-2 rounded-full bg-emerald-500"></span>Open</button>
+<button class="scholarship-chip" data-scholarship-status="Upcoming" type="button">Upcoming</button>
+<button class="scholarship-chip" data-scholarship-status="Closed" type="button">Closed</button>
+<button class="scholarship-chip" data-scholarship-status="Active" type="button">Active / recurring</button>
+</div>
+<p class="mt-4 flex items-start gap-2 rounded-xl bg-primary/5 px-4 py-3 text-on-surface-variant"><span class="material-symbols-outlined mt-0.5 text-primary">schedule</span><span>Exact deadlines update automatically using your device's current date and time. University-specific and recurring cycles are shown separately and should be confirmed on the official website.</span></p>
+</div>
+<div class="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"><p class="font-body-md text-body-md text-on-surface-variant" data-scholarship-count></p><select class="rounded-full border-outline-variant bg-white px-4 py-2 font-label-sm text-label-sm" data-scholarship-sort aria-label="Sort scholarships"><option value="country">Sort by country</option><option value="name">Sort by name</option><option value="status">Open opportunities first</option></select></div>
+<div class="mt-6 grid gap-5 lg:grid-cols-2" data-scholarship-grid></div>
+<div class="mt-6 hidden rounded-2xl border border-dashed border-outline-variant bg-surface p-10 text-center" data-scholarship-empty><span class="material-symbols-outlined text-[42px] text-primary">search_off</span><h3 class="mt-3 font-headline-md text-headline-md">No exact matches yet</h3><p class="mt-2 text-on-surface-variant">Try removing a filter or searching with a broader subject.</p></div>
+</div>
+</section>
+<section class="scholarship-support-cta bg-surface-container-low py-section-padding-mobile md:py-section-padding-desktop">
+<div class="mx-auto max-w-max-width px-gutter">
+<div class="relative overflow-hidden rounded-2xl border border-outline-variant bg-surface-container-lowest px-6 py-9 shadow-sm md:px-10 md:py-11">
+<div class="relative flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
+<div class="max-w-3xl"><span class="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1.5 font-label-md text-label-md text-primary"><span class="material-symbols-outlined text-[18px]">volunteer_activism</span>Free scholarship application support</span><h2 class="mt-5 font-headline-lg text-headline-lg text-on-surface">Found a scholarship? Let us help you apply.</h2><p class="mt-4 font-body-lg text-body-lg text-on-surface-variant">Connect with Flyover Visa Peak for a free initial scholarship consultation. We’ll help you understand eligibility, documents, deadlines and the correct application route.</p><p class="mt-3 font-body-md text-body-md text-on-surface-variant">Scholarship selection and awards are decided solely by the official provider.</p></div>
+<div class="flex shrink-0 flex-col gap-3 sm:flex-row lg:flex-col"><a class="inline-flex items-center justify-center gap-2 rounded-xl bg-secondary px-7 py-4 font-label-md text-label-md font-bold text-on-secondary shadow-lg transition hover:-translate-y-0.5 hover:shadow-xl" href="http://calendar.app.google/DDBzwvbdWXnFjZLbA" rel="noopener noreferrer" target="_blank">Book free consultation <span class="material-symbols-outlined">calendar_month</span></a><a class="inline-flex items-center justify-center gap-2 rounded-xl border-2 border-primary px-7 py-4 font-label-md text-label-md font-bold text-primary transition hover:bg-primary/5" href="https://wa.me/917285073897?text=Hi%2C%20I%20need%20help%20applying%20for%20a%20scholarship." rel="noopener noreferrer" target="_blank">Chat on WhatsApp <span class="material-symbols-outlined">chat</span></a></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
